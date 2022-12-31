@@ -1,5 +1,5 @@
 # Code'nt
-
+## Introduction
 Hey, welcome to Code'nt
 
 Code'nt is all about being fast and accurate!
@@ -10,6 +10,28 @@ The game ends immediately if the code is not correct or the time is up.
 
 And now, have fun with Code'nt!
 
-To start the game, please start the main.py.
+## Installing and starting the game
 
-You'll need all .py files...
+### Installation
+
+Copy all files from the source code to a folder
+
+Be sure, that you have at least Python 3.1 installed
+
+Visit https://www.python.org for downloading and installing Python
+
+On Linux based systems, Python 3 is already installed!
+
+### Starting the game
+
+#### Windows
+
+- Open the folder with the *.py files and double-click the main.py file.
+
+#### macOS / Linux
+
+- Open up the terminal and navigate through `cd` to the folder with the *.py files
+- Simply run `python3 main.py`
+
+If this doesn't work be sure that Python is added to PATH.
+Otherwise, check this site: https://realpython.com/add-python-to-path/
