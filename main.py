@@ -42,7 +42,7 @@ user_score = 0
 set_mode = 0
 difficulty = 0
 false_difficulty = 0
-num_mode = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+num_mode = "1234567890"
 
 animation(0.2)
 print("\nProgramm started!")
@@ -90,7 +90,7 @@ while True:
             print("Error! Game can't run properly...\nRestart in progress")
             print_line()
             animation(0.5)
-            num_mode = ["0", "1"]
+            num_mode = "01"
             print("\nProgramm started!")
             time.sleep(3)
             print_line()
@@ -161,12 +161,9 @@ while True:
         print_clear()
         user_score = 0
         while True:
-            random_code = ""
-            mode = set_mode
-            while mode > 0:
-                random_code_choice = random.choice(num_mode)
-                random_code = random_code + random_code_choice
-                mode -= 1
+            random_code_temp = 0
+            random_code_temp = random.sample(num_mode,mode)
+            random_code = "".join(random_code_temp)
             print(random_code)
             print("---------")
             t_end = time.time() + set_time
