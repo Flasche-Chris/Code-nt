@@ -1,19 +1,22 @@
 import random
-import time
-import sys
 from logo import *
 from animation import *
+
 user_score = 0
 user_score_total = 0
 
+
 def print_line():
     print("--------------------------------------------")
+
+
 def print_clear():
     clear = 50
     while clear > 0:
         print()
         time.sleep(0.01)
         clear -= 1
+
 
 while True:
     print_line()
@@ -110,7 +113,6 @@ while True:
             print_line()
             print_incorrect_input(random_code)
 
-
     if difficulty == "1":
         false_difficulty = 0
         set_mode = 4
@@ -148,8 +150,6 @@ while True:
         print_incorrect_input(random_code)
         print_line()
 
-
-
     if false_difficulty < 1:
         mode = set_mode
         user_score = 0
@@ -161,8 +161,7 @@ while True:
         time.sleep(0.5)
         print_clear()
         while True:
-            random_code_temp = 0
-            random_code_temp = random.sample(num_mode,mode)
+            random_code_temp = random.sample(num_mode, mode)
             random_code = "".join(random_code_temp)
             print(random_code)
             print("---------")
@@ -193,12 +192,3 @@ while True:
                 input()
                 print_clear()
                 break
-
-
-
-
-
-
-
-
-
