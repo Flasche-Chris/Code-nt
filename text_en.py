@@ -39,5 +39,5 @@ def print_wrong_code():
 def print_too_long():
     print("You was too slow! The game is over...")
 
-def print_score(points, level):
-    print("Your points:", points, "\nYour level:", level)
+def print_score(points, points_total, level):
+    print("Your points in this round:", points, "\nYour total points:", points_total, "\nYour level:", level)
