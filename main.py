@@ -5,8 +5,6 @@ from logo import *
 from animation import *
 
 
-
-
 def print_line():
     print("--------------------------------------------")
 def print_clear():
@@ -152,11 +150,12 @@ while True:
 
 
     if false_difficulty < 1:
+        mode = set_mode
         print("Ready...")
         time.sleep(1)
         print("Set...")
         time.sleep(1)
-        print("Zapp!")
+        print("Code!")
         time.sleep(0.5)
         print_clear()
         user_score = 0
