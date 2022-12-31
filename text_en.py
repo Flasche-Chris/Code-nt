@@ -19,7 +19,7 @@ def print_menu_advice():
     print("(Enter) Main menu")
 
 def print_credits():
-    print("Code'nt!\nVersion: 1.0\nCreated by: @Flasche_Chris\nProgramming language: Python 3.10\nLibrarys: Random, Sys and Time"
+    print("Code'nt!\nVersion: V.1.1\nCreated by: @Flasche_Chris\nProgramming language: Python 3.10\nLibrarys: Random, Sys and Time"
           "\nCreationdate: 25.12.2022\nDonation via PayPal: https://paypal.me/christianx2811\nLoading animation: @ParthChawla on replit"
           "\nGreetings to: RBBK Dortmund\n01000110010011110101001101001001001100010011000101100001\n"
           "Code'nt Copyright (C) 2023 Flasche-Chris\nThis program comes with ABSOLUTELY NO WARRANTY.\n"
