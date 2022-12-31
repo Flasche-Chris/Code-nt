@@ -3,7 +3,8 @@ import time
 import sys
 from logo import *
 from animation import *
-
+user_score = 0
+user_score_total = 0
 
 def print_line():
     print("--------------------------------------------")
@@ -53,7 +54,7 @@ while True:
         print_logo()
         print("Code'nt Copyright (C) 2023 Flasche-Chris")
         print_line()
-        print_mainscreen()
+        print_mainscreen(user_score_total)
         setting_select = input("#bash: ").capitalize()
         # select difficulty
         if setting_select == "1":
@@ -151,6 +152,7 @@ while True:
 
     if false_difficulty < 1:
         mode = set_mode
+        user_score = 0
         print("Ready...")
         time.sleep(1)
         print("Set...")
@@ -158,7 +160,6 @@ while True:
         print("Code!")
         time.sleep(0.5)
         print_clear()
-        user_score = 0
         while True:
             random_code_temp = 0
             random_code_temp = random.sample(num_mode,mode)
@@ -171,11 +172,12 @@ while True:
                 if user_code == random_code:
                     print("passed...")
                     user_score += set_points
+                    user_score_total += set_points
                 else:
                     print_line()
                     print_wrong_code()
                     print_line()
-                    print_score(user_score, difficulty)
+                    print_score(user_score, user_score_total, difficulty)
                     print_line()
                     print_menu_advice()
                     input()
@@ -185,7 +187,7 @@ while True:
                 print_line()
                 print_too_long()
                 print_line()
-                print_score(user_score, difficulty)
+                print_score(user_score, user_score_total, difficulty)
                 print_line()
                 print_menu_advice()
                 input()

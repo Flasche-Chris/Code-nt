@@ -1,5 +1,5 @@
-def print_mainscreen():
-    print("(1) Start game\n(2) Introduction\n(3) Credits\n(4) Exit")
+def print_mainscreen(points):
+    print("Your points:", points, "\n(1) Start game\n(2) Introduction\n(3) Credits\n(4) Exit")
 
 def print_level_select():
     print("(1) Easy    | 4-digit  code  | 3  seconds  time  | 0,5 points per code")
